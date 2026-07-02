@@ -24,13 +24,34 @@
 **FR :** Il faut Python 3 et les bibliothèques suivantes (un environnement virtuel `venv/` est présent dans le dossier).
 **EN:** You need Python 3 and the following libraries (a virtual environment `venv/` is present in the folder).
 
-```bash
-pip install numpy matplotlib scikit-learn
-```
-
 - **numpy** — EN: arrays and numerical computation. / FR: tableaux et calcul numérique.
 - **matplotlib** — EN: displaying images/plots. / FR: affichage d'images/graphiques.
 - **scikit-learn** — EN: provides the sample image `flower.jpg`. / FR: fournit l'image d'exemple `flower.jpg`.
+
+### Installation avec `requirements.txt` / Installing with `requirements.txt`
+
+**FR :** Toutes les dépendances (et leurs versions) sont listées dans [`requirements.txt`](requirements.txt). Pour les installer d'un coup :
+**EN:** All dependencies (and their versions) are listed in [`requirements.txt`](requirements.txt). To install them all at once:
+
+```bash
+pip install -r requirements.txt
+```
+
+**FR :** *(Recommandé)* Créez et activez d'abord un environnement virtuel pour isoler les dépendances du projet :
+**EN:** *(Recommended)* First create and activate a virtual environment to isolate the project dependencies:
+
+```bash
+# 1. Créer / Create
+python -m venv venv
+
+# 2a. Activer sous Windows (PowerShell) / Activate on Windows (PowerShell)
+venv\Scripts\Activate.ps1
+# 2b. Activer sous macOS / Linux / Activate on macOS / Linux
+source venv/bin/activate
+
+# 3. Installer les dépendances / Install the dependencies
+pip install -r requirements.txt
+```
 
 ---
 
